@@ -48,7 +48,7 @@ const Homepage = () => {
            />
 
             <BigContent
-           image={campaign2}
+           image={campaig2}
            id='big-1'
            />
 

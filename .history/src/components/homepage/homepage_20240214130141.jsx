@@ -1,6 +1,6 @@
 import react from 'react'
 import code from '../../media/code-background1.png'
-import FullScreenSlide from '../fullScreenSlide/fullScreenSlide'
+import FullScreenSlide from '../fullScreenSlide'
 import q3 from '../../media/q3-video.mp4'
 import Herobanner2 from '../herobanner2/herobanner2'
 import Navbar from '../navbar/navbar'
@@ -48,7 +48,7 @@ const Homepage = () => {
            />
 
             <BigContent
-           image={campaign2}
+           image={campaig2}
            id='big-1'
            />
 

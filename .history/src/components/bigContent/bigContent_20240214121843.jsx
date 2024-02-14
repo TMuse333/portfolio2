@@ -4,7 +4,7 @@ import React,{useState,useEffect} from "react";
 import './bigContent.css'
 import { motion } from "framer-motion";
 import { useRef } from "react";
-
+import reactLogo from '../../media/react-logo.webp'
 
 
 const BigContent = ({reverse,id,image,
