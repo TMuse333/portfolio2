@@ -28,7 +28,7 @@ const Homepage = () => {
 
     return (
         <div className='layout'>
-            {/* <Navbar/> */}
+            <Navbar/>
 
             <Herobanner2/>
 

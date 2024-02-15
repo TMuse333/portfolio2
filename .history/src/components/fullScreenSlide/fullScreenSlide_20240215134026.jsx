@@ -99,147 +99,107 @@ const FullScreenSlide = ({ video, image, id,text }) => {
 
 
   useEffect(() => {
-
-    
     const handleWheel = (event) => {
-
-
-
-      if(isDesktop && isElementInView){
-
-      setIsLocked(document.body.style.overflow === 'hidden');
-      const contentElement = videoRef.current;
-      const elementRect = contentElement.getBoundingClientRect();
-      const elementTop = elementRect.top;
-      const twentyPercentThreshold = elementRect.height * 0.2;
-      const isTwentyPercentInView = elementTop < twentyPercentThreshold;
-     
-
-    
-
-    
+      if (isDesktop && isElementInView) {
+        setIsLocked(document.body.style.overflow === 'hidden');
+        const contentElement = videoRef.current;
+        const elementRect = contentElement.getBoundingClientRect();
+        const elementTop = elementRect.top;
+        const twentyPercentThreshold = elementRect.height * 0.2;
+        const isTwentyPercentInView = elementTop < twentyPercentThreshold;
   
-      const textElement = textRef.current;
-      const textRect = textElement.getBoundingClientRect();
+        const textElement = textRef.current;
+        const textRect = textElement.getBoundingClientRect();
   
-      const windowHeight = window.innerHeight;
-
-
-      const textHeightLimit = 95
-
-      // const elementAtBottom = Math.abs(elementBottom - windowHeight) < 1;
-
+        const windowHeight = window.innerHeight;
+        const textHeightLimit = 95;
   
-      // Check if 40 percent of the top of the element is in view
-      const threshold = elementRect.height * 0.4;
-      const is40PercentInView = elementTop < threshold;
+        const threshold = elementRect.height * 0.4;
+        const is40PercentInView = elementTop < threshold;
+        const scrollDirection = event.deltaY > 0 ? 'down' : 'up';
+        const scrollMagnitude = Math.abs(event.deltaY);
   
-      const scrollDirection = event.deltaY > 0 ? 'down' : 'up';
-      const scrollMagnitude = Math.abs(event.deltaY);
-
-      const elementBottom = elementRect.bottom;
-
-    
+        const elementBottom = elementRect.bottom;
   
-      // Check if at the top and scrolling up, set scroll power to 0
-      if (textAtTop && scrollDirection === 'up') {
-        setScrollPower(0);
-        document.body.style.overflow = 'auto'; // Set overflow to auto when at the top and scrolling up
-      } else {
-        // Only apply scroll power if 40 percent is in view
-        setScrollPower(
-            // is40PercentInView ?
-             (scrollDirection === 'up' ? -scrollMagnitude/20 : scrollMagnitude/20) 
-            //  : 0
-             );
-      }
-  
-      setTextPosition((prevTextPosition) => {
-        // Calculate the new text position without clamping
-        let newTextPosition = prevTextPosition + scrollPower ;
-  
-        // Check if the new text position is within the valid range
-        if (newTextPosition >= 40 && newTextPosition <= textHeightLimit) {
-
-          if (scrollDirection === 'down') {
-          
-            if (newTextPosition >= 70) {
-              const opacityChange = 0.005 * (newTextPosition - 70); // Adjust the rate of opacity change
-              setVideoOpacity((prevOpacity) => Math.max(0, prevOpacity - opacityChange));
-            }
-          } else {
-          
-            const opacityChange = 0.005 * (90 - newTextPosition); // Adjust the rate of opacity change
-            setVideoOpacity((prevOpacity) => Math.min(0.5, prevOpacity + opacityChange));
-          }
-
-
-          // If within range, update the text position
-          return newTextPosition;
+        if (textAtTop && scrollDirection === 'up') {
+          setScrollPower(0);
+          document.body.style.overflow = 'auto';
         } else {
-          // If outside the range, clamp the value
-          return Math.min(Math.max(newTextPosition, 40), textHeightLimit);
+          setScrollPower(
+            (scrollDirection === 'up' ? -scrollMagnitude / 20 : scrollMagnitude / 20)
+          );
         }
-      });
   
-      // Check if the top of the element reaches the top of the viewport
-      if (elementTop -3 <= 0) {
-        setTopReached(true);
-        if (textPosition < 95) {
+        setTextPosition((prevTextPosition) => {
+          let newTextPosition;
+          if (isLocked) {
+            // Move by scroll power if overflow is hidden
+            newTextPosition = prevTextPosition + scrollPower;
+          } else {
+            // Move by window.scrollY if overflow is not hidden
+            newTextPosition = window.scrollY;
+          }
+  
+          if (newTextPosition >= 40 && newTextPosition <= textHeightLimit) {
+            if (scrollDirection === 'down') {
+              if (newTextPosition >= 70) {
+                const opacityChange = 0.005 * (newTextPosition - 70);
+                setVideoOpacity((prevOpacity) => Math.max(0, prevOpacity - opacityChange));
+              }
+            } else {
+              const opacityChange = 0.005 * (90 - newTextPosition);
+              setVideoOpacity((prevOpacity) => Math.min(0.5, prevOpacity + opacityChange));
+            }
+  
+            return newTextPosition;
+          } else {
+            return Math.min(Math.max(newTextPosition, 40), textHeightLimit);
+          }
+        });
+  
+        if (elementTop - 3 <= 0) {
+          setTopReached(true);
+          if (textPosition < 95) {
+            document.body.style.overflow = 'hidden';
+          }
+        }
+  
+        if (textPosition >= textHeightLimit) {
+          document.body.style.overflow = 'auto';
+          setTextAtTop(true);
+        }
+  
+        if (textPosition + 10 >= textHeightLimit) {
+          setIsPlaying(true);
+        }
+  
+        if (elementBottom < windowHeight && scrollDirection === 'up') {
+          setIsReturning(true);
+          console.log('return initiated');
+        }
+  
+        if (isReturning && elementBottom >= 750) {
           document.body.style.overflow = 'hidden';
+          setTextAtTop(false);
         }
-      }
   
-      // Check if the text position hits 90 and reset overflow to auto
-      if (textPosition >= textHeightLimit) {
-        document.body.style.overflow = 'auto';
-        setTextAtTop(true)
-      }
-
-      if(textPosition + 10 >= textHeightLimit){
-        setIsPlaying(true)
-      }
-
-      if(elementBottom < windowHeight && scrollDirection === 'up'){
-        setIsReturning(true)
-        console.log('return initiated')
-      }
-
-      if(isReturning && elementBottom >= 750){
-        document.body.style.overflow = 'hidden'
-        setTextAtTop(false)
-      }
-
-      if(textPosition === 40 && scrollDirection === 'up'){
-        document.body.style.overflow = 'auto'
-        setIsReturning(false)
-      }
-
-      if( scrollPower > 1 && isReturning){
-        document.body.style.overflow = 'auto'
-        setIsReturning(false)
-        console.log('return complete')
-      }
-
-      let newVideoScale;
-     
-        // Adjust video scale based on the distance from the bottom of the viewport
+        if (textPosition === 40 && scrollDirection === 'up') {
+          document.body.style.overflow = 'auto';
+          setIsReturning(false);
+        }
+  
+        if (scrollPower > 1 && isReturning) {
+          document.body.style.overflow = 'auto';
+          setIsReturning(false);
+          console.log('return complete');
+        }
+  
+        let newVideoScale;
         newVideoScale = Math.min(1, Math.max(0.5, 1 - ((windowHeight - elementBottom) / 5000)));
-     
-      
-      setVideoScale(newVideoScale);
- 
-   
-    }
-
-    else{
-      document.body.style.overflow = 'auto'
-    }
-
-   
-
- 
- 
+        setVideoScale(newVideoScale);
+      } else {
+        document.body.style.overflow = 'auto';
+      }
     };
   
     document.addEventListener('wheel', handleWheel);
@@ -247,7 +207,8 @@ const FullScreenSlide = ({ video, image, id,text }) => {
     return () => {
       document.removeEventListener('wheel', handleWheel);
     };
-  }, [setScrollPower, scrollPower, setTextPosition, setBottomReached, textPosition, textAtTop, setTextAtTop,setIsReturning,isLocked,setVideoScale,isElementInView]);
+  }, [setScrollPower, scrollPower, setTextPosition, textPosition, setTopReached, textAtTop, setTextAtTop, setIsReturning, isLocked, setVideoScale, isElementInView]);
+  
 
 
   //[setScrollPower, scrollPower, setTextPosition, setBottomReached, textPosition, textAtTop, setTextAtTop,setIsReturning,isLocked,setVideoScale]);

@@ -20,7 +20,6 @@ import TextFormat2 from '../textFormat2/textFormat2'
 import cards from '../../media/quantum-example.mp4'
 import code2 from '../../media/code-snippet2.png'
 import code3 from '../../media/code-snippet3.png'
-import Booking from '../booking/booking'
 
 
 
@@ -28,7 +27,7 @@ const Homepage = () => {
 
     return (
         <div className='layout'>
-            {/* <Navbar/> */}
+            <Navbar/>
 
             <Herobanner2/>
 
@@ -74,7 +73,7 @@ const Homepage = () => {
            customText={<TextFormat2/>}
            />
 
-           <Booking/>
+           <Booking
 
 
 

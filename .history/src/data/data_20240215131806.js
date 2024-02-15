@@ -78,7 +78,7 @@ export const designAdvantages = [
   
           name: 'General design skills',
           description: `I have been into design since I was
-          young and before coding I have years of experience drawing
+          a young and before coding I have years of experience drawing
           things and creating content through drawing, making videos and
           animations. I have keen visual intelligence so I understand
           how to make appealing and unique user interfaces.`,

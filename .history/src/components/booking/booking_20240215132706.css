@@ -1,0 +1,223 @@
+.booking-container{
+    background-image: url(../../images/quantum-realm.png);
+    width:100vw;
+    position: absolute;
+    top:0px;
+    left:0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    /* height:100vh; */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+
+   
+    
+}
+
+.booking-contents{
+    margin-top: 6rem;
+    /* height:100vh */
+}
+
+.slat{
+
+}
+
+.small{
+
+    width:100vw;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #00bfff; */
+}
+
+.booking-title{
+    font-size: 24px;
+}
+
+.booking-p {
+    font-size: 18px;
+}
+
+.correct{
+    font-size: 18px;
+opacity: 1;
+    font-weight: 500;
+    font-family: 'Palatino Sans', 'Palatino Sans Informal', 'Palatino Sans Text', 'Palatino Sans W1G', 'Palatino Sans W01', sans-serif;
+   
+}
+
+.info-box-container{
+    width: 100vw;
+ margin-left: auto;
+ margin-right: auto;
+   display: flex;
+   flex-direction: column;
+   
+}
+
+.info-box-container input{
+    border-color:#00bfff;
+    border-radius: 20px;
+    padding:10px;
+    box-shadow: 0 0 10px #00bfff;
+    width:60vw;
+    /* margin-left: 2rem; */
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    
+    
+}
+
+
+
+.info-box-container input::placeholder {
+    color: grey; /* Placeholder text color */
+    /* Adding a glow effect */
+}
+
+.info-box-container input:not(:first-child){
+    margin-top: 2rem;
+}
+
+.big{
+
+    display: none;
+}
+
+.pad3{
+    background: radial-gradient(circle at center, rgba(0, 153, 205, 0.7), rgba(48, 115, 160, 0.7));
+    border-radius: 2rem;
+    padding:1rem;
+    font-family: 
+    'Palatino Sans', 'Palatino Sans Informal', 'Palatino Sans Text', 'Palatino Sans W1G', 'Palatino Sans W01',sans-serif;
+}
+
+@media screen and (min-width:500px){
+    .booking-container{
+        padding-top: 0;
+        
+    }
+
+
+
+    .correct{
+        transform: translateY(4rem);
+    }
+
+}
+
+@media screen and (min-width:865px){
+    .small{
+        width: 50vw;
+        margin-left: 0;
+        margin-right: 0;
+        
+    
+       
+
+    }
+
+    .booking-contents{
+        margin-top: 1rem;
+    }
+
+    .booking-container{
+        height: 100vh;;
+    }
+
+    
+
+    .info-box-container input{
+margin-left: 3rem;
+margin-right:3rem;
+
+width:30vw;
+max-width: 500px;
+    }
+
+    .big{
+        display: block;
+        width: 50vw;
+        
+  margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+  
+    }
+
+    .big img{
+        width: 300px;
+        margin-top: -4rem;
+    }
+
+    .big ul{
+        margin-top: -0.5rem;
+    }
+
+    .big li{
+        list-style: none;
+    }
+
+    .big h2{
+        margin-top: -0rem;
+    }
+
+    .small{
+       
+        text-align: left;
+       
+    }
+
+    .booking-container .promise{
+     
+        margin-top: -3rem;
+  
+        color:#00bfff;
+    }
+
+  .booking-container  .booking-p{
+        /* background-color: blue; */
+        padding-left: 3rem;
+        font-family: 
+        'Palatino Sans', 'Palatino Sans Informal', 'Palatino Sans Text', 'Palatino Sans W1G', 'Palatino Sans W01',sans-serif;
+  font-weight: 400;
+  background: radial-gradient(circle at center, rgba(0, 153, 205, 0.7), rgba(48, 115, 160, 0.7));
+        /* text-align: left; */
+    }
+
+    .correct{
+    padding-left: 3rem;
+    /* text-align: left; */
+    }
+
+    .submit-button{
+        margin-left: 3rem;
+    }
+
+    .pad3{
+  
+       
+  font-weight: 550;
+  margin-top: 2rem;
+  background: radial-gradient(circle at center, rgba(0, 153, 205, 0.7), rgba(48, 115, 160, 0.7));
+  border-radius: 2rem;
+  padding:1rem;
+  margin-left: 2rem;
+    }
+
+    .info-box-container input{
+        margin-bottom: -1rem;
+    }
+}

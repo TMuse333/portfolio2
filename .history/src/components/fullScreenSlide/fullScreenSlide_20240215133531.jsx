@@ -139,7 +139,24 @@ const FullScreenSlide = ({ video, image, id,text }) => {
 
       const elementBottom = elementRect.bottom;
 
-    
+    //   if (isTwentyPercentInView && scrollDirection === 'up') {
+    //     // Reset all states to their original positions
+    //     setTextPosition(40);
+    //     setVideoOpacity(0.5);
+    //     setTextAtTop(false);
+    //     setIsReturning(false);
+    //     setIsLocked(false);
+    //     console.log('reset!!')
+    //     // Add more reset statements as needed
+  
+    //     // Reset overflow to auto
+    //     document.body.style.overflow = 'auto';
+    //   }
+
+
+
+
+      // console.log('bottom',elementTop,elementBottom)
   
       // Check if at the top and scrolling up, set scroll power to 0
       if (textAtTop && scrollDirection === 'up') {
@@ -254,15 +271,18 @@ const FullScreenSlide = ({ video, image, id,text }) => {
 
 
   useEffect(() => {
-    if (videoRef.current) {
-      if (isPlaying) {
+    if (isPlaying) {
+      // Check if videoRef is defined before calling play
+      if (videoRef.current) {
         videoRef.current.play();
-      } else {
-        videoRef.current.pause();
       }
+
+      else{
+        
+      }
+
     }
   }, [isPlaying]);
-  
   
 
   const overlayStyle = {
