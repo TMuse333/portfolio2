@@ -1,0 +1,143 @@
+.full-slide-video{
+    margin:0 auto;
+    /* width: 100vw; */
+ 
+    transition: opacity 0.5s ease; 
+
+    /* width: 100%; */
+    height: 80vh;;
+    width: 90vw;
+    position: relative;
+
+    
+
+
+}
+
+.desktop{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 75% 50%;
+}
+
+.full-slide-text h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.full-slide-video-container{
+
+height:100vh;
+width: 100vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-bottom: 8rem;
+}
+
+.full-slide-video video{
+ 
+}
+
+#q3-video{
+    object-position: 50% 50%;
+}
+
+.full-slide-container{
+    margin-top: 3rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.full-slide-text{
+    margin:0 auto 0 auto;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    
+}
+
+.full-slide-text h3{
+    margin-bottom: -2rem;
+}
+
+.overlay{
+    position: absolute;
+
+    width: 100vw;
+
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+
+}
+
+.full-slide-description{
+    display: flex;
+    width:70vw;
+    margin: 2rem auto 0;
+    background-color: white;
+    /* height:30vh; */
+    padding:2rem;
+    justify-content: space-around;
+    flex-direction: column;
+    color:black;
+}
+
+.full-slide-description p {
+    margin-top: 1rem;
+    /* padding-left: 5rem; */
+}
+
+.full-slide-description h2{
+    font-size: 1.2rem;
+    /* width: 10vw; */
+}
+
+.full-slide-description button{
+    margin-top: 2rem;
+    margin-left: -0rem;
+}
+
+.full-slide-text h1{
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+
+
+@media screen and (min-width:700px){
+    .full-slide-description h2{
+     
+        /* width: 10vw; */
+    }
+
+    .full-slide-text h1{
+        /* margin:0;
+        font-size: 2.5rem;
+        padding: 0; */
+        font-size: 2.5rem;
+    }
+
+    .full-slide-description{
+        flex-direction: row;
+        max-height: 500px;
+        
+    }
+
+    .full-slide-description p{
+        padding-left: 5rem;
+    }
+   
+}

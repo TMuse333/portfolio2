@@ -1,0 +1,128 @@
+.big-content-container{
+    width:100vw;
+    position: relative;
+    /* margin-bottom: 15rem; */
+    
+}
+
+.text-container{
+    /* text-align: left; */
+    margin-left: 1rem;
+    position: relative;
+    z-index: 3;
+}
+
+.text-container ul{
+    text-align: left;
+    padding: 0;
+    margin-left: 1rem;
+    color:black;
+}
+
+.content-text-container{
+    margin-top: 3rem;
+    position: relative;
+
+}
+
+
+
+.image-container img{
+    width: 100vw;
+    /* position: absolute; */
+    top:100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+@media screen and (min-width:555px){
+    .image-container img{
+        position: absolute;
+        right:0;
+        top:auto;
+        width:50vw;
+        height: 50vh;
+        max-height: 500px;
+       
+      
+
+    }
+
+
+    .big-content-container{
+        margin-bottom: 0rem;
+    }
+
+
+ 
+
+    .reverse-image img{
+        position: absolute;
+        /* left:0%; */
+        right: 58%;
+     
+    }
+
+    .reverse-text{
+        /* margin-right: 2rem; */
+        position: relative;
+        max-width: 400px;
+        width: 15rem;
+        margin-left: 15rem;
+        /* position: absolute; */
+        /* left:0%; */
+    }
+
+    .text-container{
+    transform: translateY(-4rem);
+    /* margin-right: auto; */
+    width: 15rem;
+    margin-left: -3rem;
+    max-width: 400px;
+    position: relative;
+
+    /* left:15%; */
+    /* position: absolute;
+    left:20%; */
+
+ 
+    }
+
+    .reverse-container{
+        flex-direction: row-reverse;
+     /* width: 100vw; */
+        /* margin-right: auto;
+        margin-left: 0; */
+        /* max-width: 1500px; */
+      
+    }
+
+    .content-text-container{
+
+        display: flex;
+        justify-content: space-evenly;
+        /* width:80vw; */
+        /* max-width:870px; */
+        margin-left: -3rem;
+        /* flex-direction: row-reverse; */
+  
+   /* margin-left: auto; */
+        /* max-width: 1400px; */
+        /* max-width: 900px; */
+        /* margin: 0 auto 0 0; */
+        
+    }
+    
+}
+
+@media screen and (min-width:600px) {
+    .text-container{
+        width: 38vw;
+        margin-left: -5rem;
+    }
+}

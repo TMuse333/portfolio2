@@ -1,0 +1,27 @@
+.text2-container   {
+
+}
+
+.text2-list{
+    text-align: left;
+   
+}
+
+.text2-list li{
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width:555px){
+    .text2-container   {
+           transform: translateY(-3rem);
+           margin-right: 3rem;
+    }
+
+    .text2-container h2{
+        width: ;
+    }
+
+    .text2-list{
+        width: 30vw;
+    }
+}

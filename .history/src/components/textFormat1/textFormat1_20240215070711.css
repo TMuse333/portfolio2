@@ -1,0 +1,13 @@
+.text1-container {
+    /* margin-top: -1rem;
+    margin: 0 auto; */
+    width:100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* background-color: blue; */
+    /* width:50vw; */
+    /* margin-right:4rem; */
+}
