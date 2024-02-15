@@ -115,7 +115,7 @@ const Booking = () => {
                 name='company_Name'
               />
               <input type='text' placeholder='Phone number' name='phone_Number' />
-              <input type='text' placeholder='Your message' name='project_Details' />
+              <input type='text' placeholder='Project details' name='project_Details' />
             </div>
 
          

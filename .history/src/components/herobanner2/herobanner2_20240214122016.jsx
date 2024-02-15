@@ -11,7 +11,7 @@ const Herobanner2 = () => {
             <div className="hero2-content-box">
                 <div className="hero2-text-box">
                  <h2>Hello, I'm Thomas</h2>
-                 <h1 >A Front end Developer</h1>
+                 <h1 >A React JS Developer</h1>
                  <p>
                  I take a disciplined and focused approach to creating unique,
                  interactive and functional applications.

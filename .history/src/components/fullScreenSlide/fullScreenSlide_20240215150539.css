@@ -6,9 +6,9 @@
 
     /* width: 100%; */
     height: 80vh;;
-    object-fit: cover;
     width: 90vw;
     position: relative;
+    /* object-fit: cover; */
     
 
     
@@ -128,8 +128,6 @@ justify-content: center;
         /* width: 10vw; */
     }
 
-    
-
     .full-slide-text h1{
         /* margin:0;
         font-size: 2.5rem;
@@ -145,6 +143,10 @@ justify-content: center;
 
     .full-slide-description p{
         padding-left: 5rem;
+    }
+
+    .full-slide-video{
+        width:90vw;
     }
    
 }

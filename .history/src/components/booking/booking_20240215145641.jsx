@@ -99,10 +99,7 @@ const Booking = () => {
             Let's get in contact so we can work together
           </p>
           <p className='booking-p'>
-            Email: Thomaslmusial@gmail.com
-          </p>
-          <p className='booking-p'>
-            Text me at 902-999-1006
+            Email:Thomaslmusial@gmail.com
           </p>
           <form onSubmit={sendEmail} ref={form}>
             <div className='info-box-container'>
@@ -111,11 +108,11 @@ const Booking = () => {
               <input type='text' placeholder='Last Name' name='last_Name' />
               <input
                 type='text'
-                placeholder='Company name'
+                placeholder='Company name (if applicable)'
                 name='company_Name'
               />
               <input type='text' placeholder='Phone number' name='phone_Number' />
-              <input type='text' placeholder='Your message' name='project_Details' />
+              <input type='text' placeholder='Project details' name='project_Details' />
             </div>
 
          
