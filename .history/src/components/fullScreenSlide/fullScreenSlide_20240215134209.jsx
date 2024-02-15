@@ -229,8 +229,6 @@ const FullScreenSlide = ({ video, image, id,text }) => {
      
       
       setVideoScale(newVideoScale);
-
-  
  
    
     }
@@ -277,7 +275,6 @@ const FullScreenSlide = ({ video, image, id,text }) => {
     position: 'absolute',
     left:'50%',
     transform:'translateX(-50%)',
-    opacity:textAtTop ? 0 : 1
 
   }
 
