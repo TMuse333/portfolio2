@@ -90,10 +90,12 @@ const HydroList = ({text,intro}) => {
 <h2 style={{
     marginLeft:'1rem',
     color:'white'
-}}>{intro.title}</h2>
+}}>My Primary Skill</h2>
 
               <p className="docs-intro">
-            {intro.description}
+            Currently my I am most competent in react JS
+            with over 550 hours since July 2023 (Approximately 4 hours of coding a day everyday). Here are some of my skills within react,
+            which include html and css knowledge as well
 
         </p>
    

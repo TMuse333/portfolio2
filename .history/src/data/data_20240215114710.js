@@ -113,8 +113,7 @@ export const designAdvantages = [
 
       export const hydrolistIntro2 = {
         title:'My secondary skills',
-        description:'Besides react js I have two years of computer science at Dalhousie University, here'+
-        ' are some other skills I have'
+        description:'Besides react js I have two years of computer science at Dalhousie University, here'
       }
   
     

@@ -110,12 +110,6 @@ export const designAdvantages = [
         with over 550 hours since July 2023 (Approximately 4 hours of coding a day everyday). Here are some of my skills within react,
         which include html and css knowledge as well`
       }
-
-      export const hydrolistIntro2 = {
-        title:'My secondary skills',
-        description:'Besides react js I have two years of computer science at Dalhousie University, here'+
-        ' are some other skills I have'
-      }
   
     
   

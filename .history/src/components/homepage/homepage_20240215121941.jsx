@@ -45,7 +45,7 @@ const Homepage = () => {
             <Content
             hasTilt={true}
          
-            image={code3}
+            image={code}
             rev={true}
            customText={<HydroList
            text={designAdvantages}

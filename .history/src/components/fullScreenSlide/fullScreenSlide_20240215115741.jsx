@@ -212,10 +212,6 @@ const FullScreenSlide = ({ video, image, id,text }) => {
         setTextAtTop(true)
       }
 
-      if(textPosition + 10 >= textHeightLimit){
-        setIsPlaying(true)
-      }
-
       if(elementBottom < windowHeight && scrollDirection === 'up'){
         setIsReturning(true)
         console.log('return initiated')
@@ -276,7 +272,7 @@ const FullScreenSlide = ({ video, image, id,text }) => {
         videoRef.current.play();
       }
     }
-  }, [isPlaying]);
+  }, [text]);
   
 
   const overlayStyle = {

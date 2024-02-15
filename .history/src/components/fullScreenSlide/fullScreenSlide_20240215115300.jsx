@@ -7,7 +7,7 @@ const FullScreenSlide = ({ video, image, id,text }) => {
   const videoRef = useRef();
   const textRef = useRef();
   const elementRef = useRef()
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
 
   const [topReached, setTopReached] = useState(false);
   const [textPosition, setTextPosition] = useState(40);
@@ -210,10 +210,6 @@ const FullScreenSlide = ({ video, image, id,text }) => {
       if (textPosition >= textHeightLimit) {
         document.body.style.overflow = 'auto';
         setTextAtTop(true)
-      }
-
-      if(textPosition + 10 >= textHeightLimit){
-        setIsPlaying(true)
       }
 
       if(elementBottom < windowHeight && scrollDirection === 'up'){

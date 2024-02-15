@@ -18,7 +18,7 @@
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    /* object-position: 75% 50%; */
+    object-position: 75% 50%;
 }
 
 .full-slide-text h1{
@@ -52,7 +52,7 @@ justify-content: center;
 }
 
 #full-video-2{
-
+    /* margin-bottom: 15rem; */
 }
 
 .full-slide-text{

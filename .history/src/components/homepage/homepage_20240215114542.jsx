@@ -8,8 +8,7 @@ import {designAdvantages,
     designAdvantages2,
 project1,
 project2,
-hydrolistIntro1,
-hydrolistIntro2} from '../../data/data'
+hydrolistIntro1} from '../../data/data'
 import Content from '../content/content'
 import HydroList from '../hyrdrolist/hydrolist'
 import BigContent from '../bigContent/bigContent'
@@ -17,13 +16,11 @@ import campaign1 from '../../media/campaign-2021.jpg'
 import campaign2 from '../../media/campaign-2.jpg'
 import TextFormat1 from '../textFormat1/textFormat1'
 import TextFormat2 from '../textFormat2/textFormat2'
-import cards from '../../media/quantum-example.mp4'
-import code2 from '../../media/code-snippet2.png'
-import code3 from '../../media/code-snippet3.png'
 
 
 
 const Homepage = () => {
+
 
     return (
         <div className='layout'>
@@ -32,7 +29,7 @@ const Homepage = () => {
             <Herobanner2/>
 
             <FullScreenSlide
-            video={cards}
+            video={q3}
             id='full-video-1'
             text={project1}
             />
@@ -43,21 +40,17 @@ const Homepage = () => {
             />
 
             <Content
-            hasTilt={true}
-         
-            image={code3}
+            image={code}
             rev={true}
            customText={<HydroList
-           text={designAdvantages}
-           intro={hydrolistIntro1}/>
+           text={designAdvantages}/>
            }/>
 
-            <Content
-            image={code2}
-            hasAnimation={true}
+<Content
+            image={code}
+          
            customText={<HydroList
-           text={designAdvantages2}
-           intro={hydrolistIntro2}/>
+           text={designAdvantages2}/>
            }/>
 
            <BigContent

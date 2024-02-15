@@ -212,7 +212,7 @@ const FullScreenSlide = ({ video, image, id,text }) => {
         setTextAtTop(true)
       }
 
-      if(textPosition + 10 >= textHeightLimit){
+      if(textPosition - 10 >= textHeightLimit){
         setIsPlaying(true)
       }
 

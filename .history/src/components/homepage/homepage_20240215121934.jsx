@@ -19,7 +19,7 @@ import TextFormat1 from '../textFormat1/textFormat1'
 import TextFormat2 from '../textFormat2/textFormat2'
 import cards from '../../media/quantum-example.mp4'
 import code2 from '../../media/code-snippet2.png'
-import code3 from '../../media/code-snippet3.png'
+import code3 from 'src/media/code-snippet3.png'
 
 
 
@@ -45,7 +45,7 @@ const Homepage = () => {
             <Content
             hasTilt={true}
          
-            image={code3}
+            image={code}
             rev={true}
            customText={<HydroList
            text={designAdvantages}

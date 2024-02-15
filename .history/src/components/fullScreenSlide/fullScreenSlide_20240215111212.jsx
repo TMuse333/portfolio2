@@ -7,7 +7,7 @@ const FullScreenSlide = ({ video, image, id,text }) => {
   const videoRef = useRef();
   const textRef = useRef();
   const elementRef = useRef()
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
 
   const [topReached, setTopReached] = useState(false);
   const [textPosition, setTextPosition] = useState(40);
@@ -38,8 +38,7 @@ const FullScreenSlide = ({ video, image, id,text }) => {
       setIsElementInView(entry.isIntersecting);
       if (entry.isIntersecting) {
         // console.log('video is In view!',id)
-        setIsElementInView(true); 
-        // Set isElementInView to true when the element is in view
+        setIsElementInView(true); // Set isElementInView to true when the element is in view
         // Start observing wheel events when the element is in view
       
       } else {
@@ -212,10 +211,6 @@ const FullScreenSlide = ({ video, image, id,text }) => {
         setTextAtTop(true)
       }
 
-      if(textPosition + 10 >= textHeightLimit){
-        setIsPlaying(true)
-      }
-
       if(elementBottom < windowHeight && scrollDirection === 'up'){
         setIsReturning(true)
         console.log('return initiated')
@@ -270,13 +265,14 @@ const FullScreenSlide = ({ video, image, id,text }) => {
 
 
   useEffect(() => {
-    if (isPlaying) {
-      // Check if videoRef is defined before calling play
-      if (videoRef.current) {
-        videoRef.current.play();
-      }
-    }
-  }, [isPlaying]);
+    // console.log('isLocked changed:', isLocked);
+    // console.log('Is returning changed',isReturning)
+   
+    // console.log('text position',textPosition)
+
+    
+    // Additional logic, if needed, based on the value of isLocked
+  }, [isLocked,isReturning,textAtTop,textPosition]);
   
 
   const overlayStyle = {
@@ -300,8 +296,8 @@ const FullScreenSlide = ({ video, image, id,text }) => {
           ref={textRef}
           className="full-slide-text"
         >
-          <h3>{text.subtitle}</h3>
-          <h1>{text.title}</h1>
+          <h3>Some Of My Work</h3>
+          <h1>Here are some my abilities</h1>
         </div>
       )}
   
@@ -328,8 +324,8 @@ const FullScreenSlide = ({ video, image, id,text }) => {
             }}
             className="full-slide-text"
           >
-<h3>{text.subtitle}</h3>
-          <h1>{text.title}</h1>
+<h3>Some Of My Work</h3>
+          <h1>Here are some my abilities</h1>
           </div>
         </div>
       )}
@@ -338,10 +334,12 @@ const FullScreenSlide = ({ video, image, id,text }) => {
         <h2 style={{
             color:'black'
         }}>
-          {text.title}
+          The Quantum Card Game
         </h2>
         <p>
-        {text.description}
+         My first ever project in react, a card game with art that I made
+         to test your memory and reaction time! This project 
+         taught me a lot about how to use Hooks in react.
           <br/><button>button</button>
         </p>
       </div>

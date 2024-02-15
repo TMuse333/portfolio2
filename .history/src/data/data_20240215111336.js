@@ -87,34 +87,9 @@ export const designAdvantages = [
       ]
 
 
-      export const project1 =
+      const project1 =
       {
-        subtitle:'My first react js project',
-        title:'The Quantum Card Game',
-        description:`My first ever project in react, a card game with art that I made where you can test your memory and reaction time.
-        This project taught me a lot of how to use hooks like useState, useEffect and context
-        to ensure the game functioned properly`
-      }
-
-      export const project2 = {
-        subtitle:'My freelancing website',
-        title:'Q3 Designs',
-        description:"This is where I offer freelancing for unique and visually appealing websites. "+
-        'In this project I learned a lot about how to make unique and visually appealing interfaces '+
-        'and make reuseable components'
-      }
-
-     export const hydrolistIntro1 = {
-        title:'My Primary Skill',
-        description:`Currently my I am most competent in react JS
-        with over 550 hours since July 2023 (Approximately 4 hours of coding a day everyday). Here are some of my skills within react,
-        which include html and css knowledge as well`
-      }
-
-      export const hydrolistIntro2 = {
-        title:'My secondary skills',
-        description:'Besides react js I have two years of computer science at Dalhousie University, here'+
-        ' are some other skills I have'
+        subtitle:''
       }
   
     

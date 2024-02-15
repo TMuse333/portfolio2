@@ -39,7 +39,7 @@ const FullScreenSlide = ({ video, image, id,text }) => {
       if (entry.isIntersecting) {
         // console.log('video is In view!',id)
         setIsElementInView(true); 
-        // Set isElementInView to true when the element is in view
+        set// Set isElementInView to true when the element is in view
         // Start observing wheel events when the element is in view
       
       } else {
@@ -212,10 +212,6 @@ const FullScreenSlide = ({ video, image, id,text }) => {
         setTextAtTop(true)
       }
 
-      if(textPosition + 10 >= textHeightLimit){
-        setIsPlaying(true)
-      }
-
       if(elementBottom < windowHeight && scrollDirection === 'up'){
         setIsReturning(true)
         console.log('return initiated')
@@ -270,13 +266,14 @@ const FullScreenSlide = ({ video, image, id,text }) => {
 
 
   useEffect(() => {
-    if (isPlaying) {
-      // Check if videoRef is defined before calling play
-      if (videoRef.current) {
-        videoRef.current.play();
-      }
-    }
-  }, [isPlaying]);
+    // console.log('isLocked changed:', isLocked);
+    // console.log('Is returning changed',isReturning)
+   
+    // console.log('text position',textPosition)
+
+    
+    // Additional logic, if needed, based on the value of isLocked
+  }, [isLocked,isReturning,textAtTop,textPosition]);
   
 
   const overlayStyle = {

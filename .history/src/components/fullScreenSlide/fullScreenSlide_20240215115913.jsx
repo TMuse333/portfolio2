@@ -212,8 +212,8 @@ const FullScreenSlide = ({ video, image, id,text }) => {
         setTextAtTop(true)
       }
 
-      if(textPosition + 10 >= textHeightLimit){
-        setIsPlaying(true)
+      if(textPosition - 10 >= textHeightLimit){
+        setIsPlaying
       }
 
       if(elementBottom < windowHeight && scrollDirection === 'up'){
@@ -270,13 +270,13 @@ const FullScreenSlide = ({ video, image, id,text }) => {
 
 
   useEffect(() => {
-    if (isPlaying) {
+    if (textAtTop) {
       // Check if videoRef is defined before calling play
       if (videoRef.current) {
         videoRef.current.play();
       }
     }
-  }, [isPlaying]);
+  }, [textAtTop]);
   
 
   const overlayStyle = {

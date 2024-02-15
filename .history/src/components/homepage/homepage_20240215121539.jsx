@@ -18,12 +18,12 @@ import campaign2 from '../../media/campaign-2.jpg'
 import TextFormat1 from '../textFormat1/textFormat1'
 import TextFormat2 from '../textFormat2/textFormat2'
 import cards from '../../media/quantum-example.mp4'
-import code2 from '../../media/code-snippet2.png'
-import code3 from '../../media/code-snippet3.png'
+import 
 
 
 
 const Homepage = () => {
+
 
     return (
         <div className='layout'>
@@ -45,15 +45,15 @@ const Homepage = () => {
             <Content
             hasTilt={true}
          
-            image={code3}
+            image={code}
             rev={true}
            customText={<HydroList
            text={designAdvantages}
            intro={hydrolistIntro1}/>
            }/>
 
-            <Content
-            image={code2}
+<Content
+            image={code}
             hasAnimation={true}
            customText={<HydroList
            text={designAdvantages2}

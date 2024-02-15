@@ -90,7 +90,7 @@ const HydroList = ({text,intro}) => {
 <h2 style={{
     marginLeft:'1rem',
     color:'white'
-}}>{intro.title}</h2>
+}}>My Primary Skill</h2>
 
               <p className="docs-intro">
             {intro.description}
