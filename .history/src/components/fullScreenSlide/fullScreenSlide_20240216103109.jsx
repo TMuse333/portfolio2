@@ -32,8 +32,6 @@ const FullScreenSlide = ({ video, image, id,text }) => {
 
   const [isElementInView, setIsElementInView] = useState(false)
 
-  const poster = text.poster
-
 
   useEffect(() => {
     const observerCallback = (entries) => {

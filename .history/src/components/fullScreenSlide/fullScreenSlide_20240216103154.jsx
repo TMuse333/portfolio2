@@ -32,7 +32,7 @@ const FullScreenSlide = ({ video, image, id,text }) => {
 
   const [isElementInView, setIsElementInView] = useState(false)
 
-  const poster = text.poster
+  const poster = text.ti
 
 
   useEffect(() => {
