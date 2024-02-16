@@ -61,7 +61,7 @@ const Homepage = () => {
            intro={hydrolistIntro2}/>
            }/>
 
-           <h1>Other Experiences</h1>
+           <h1>Other experiences</h1>
 
            <BigContent
            image={campaign1}
