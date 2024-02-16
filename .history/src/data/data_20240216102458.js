@@ -131,7 +131,6 @@ export const designAdvantages = [
         to ensure the game functioned properly`,
         link:'https://quantumcardgame.netlify.app',
         github:'https://github.com/TMuse333/card-game',
-        poster:'../../media/card-game-screenshot.png'
         
        
       }

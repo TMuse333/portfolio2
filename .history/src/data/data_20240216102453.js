@@ -131,7 +131,6 @@ export const designAdvantages = [
         to ensure the game functioned properly`,
         link:'https://quantumcardgame.netlify.app',
         github:'https://github.com/TMuse333/card-game',
-        poster:'../../media/card-game-screenshot.png'
         
        
       }
@@ -144,7 +143,7 @@ export const designAdvantages = [
         'and make reuseable components',
         link:'https://q3designs.netlify.app',
         github:'https://github.com/TMuse333/quantumDesigns',
-        poster:'../../media/q3-screenshot.png'
+        poster:'src/media/q3-screenshot.png'
       }
 
      export const hydrolistIntro1 = {

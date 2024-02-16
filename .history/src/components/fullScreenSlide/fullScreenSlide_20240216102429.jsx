@@ -303,7 +303,7 @@ const FullScreenSlide = ({ video, image, id,text }) => {
         controls
         autoPlay={isPlaying}
         muted
-        poster={text.poster}
+        poster=''
         loop
         style={textAtTop && isDesktop ? { transform: `scale(${videoScale})` } : null}
       >
