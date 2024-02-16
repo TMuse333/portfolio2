@@ -1,9 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './fullScreenSlide.css';
 import { Link } from 'react-router-dom';
-import cardPoster from  '../../media/card-game-screenshot.png'
-
-import q3Poster from '../../media/q3-screenshot.png'
+import cardPoster from
 
 
 const FullScreenSlide = ({ video, image, id,text }) => {
@@ -34,8 +32,8 @@ const FullScreenSlide = ({ video, image, id,text }) => {
 
   const [isElementInView, setIsElementInView] = useState(false)
 
-  const poster = text.title === "The Quantum Card Game" ? cardPoster
-   : q3Poster
+  const poster = text.title === "The Quantum Card Game" ? 
+   '../../media/card-game-screenshot.png' : '../../media/q3-screenshot.png'
 
 
    console.log(poster)

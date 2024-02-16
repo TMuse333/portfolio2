@@ -34,8 +34,8 @@ const FullScreenSlide = ({ video, image, id,text }) => {
 
   const [isElementInView, setIsElementInView] = useState(false)
 
-  const poster = text.title === "The Quantum Card Game" ? cardPoster
-   : q3Poster
+  const poster = text.title === "The Quantum Card Game" ? 
+   : 
 
 
    console.log(poster)
