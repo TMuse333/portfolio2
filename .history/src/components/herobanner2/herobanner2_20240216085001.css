@@ -1,0 +1,138 @@
+.herobanner2-container{
+    width:100vw;
+margin-top: 4.5rem;
+    background-image: url(../../media/code-background1.png);
+    background-size: cover;
+    color:white;
+    position: relative;
+    background-position: 50% 50%;
+
+}
+
+.hero2-text-box{
+    margin-top: -1rem;
+    padding: 0 1rem 0 1rem;
+}
+
+.hero2-text-box h1{
+    font-size: 1.4rem;
+}
+
+.hero2-content-box h2{
+    margin-bottom: -0.5rem;
+    font-size: 1.2rem;
+}
+
+.hero2-content-box{
+  
+    display: flex;
+    flex-direction: column;
+}
+
+.herobanner2-container img{
+  min-height: 288px;
+    height:50vw;
+    /* position: absolute; */
+    z-index: 3;
+    object-fit: cover;
+    margin-top: -1rem;
+    /* bottom: 0;
+    left:50%;
+    transform: translateX(-45%); */
+
+}
+
+
+
+
+@media screen and (min-width:470px) {
+
+    .herobanner2-container{
+        height:60vh;
+        min-height: 450px;
+    }
+
+    .hero2-text-box{
+       padding: 0;
+       z-index: 10;
+       margin-left: 2rem;
+       position: absolute;
+       left:0%;
+       width: 50vw;
+       max-width: 484px;
+       top:5%;
+       /* width: 50vw; */
+       /* background-color: red; */
+        /* width:50vw; */
+    }
+
+  
+
+    .herobanner2-container img{
+     /* width: min-content; */
+        height:30rem;
+       
+ /* margin-top: auto; */
+ /* left: 115%; */
+position: absolute;
+bottom: 0;
+left:75%;
+ transform: translateX(-40%);
+ max-height: 360px;
+ min-height: 288px;
+ /* background-color: aliceblue; */
+
+    }
+
+    .hero2-content-box{
+        flex-direction: row;
+        width:100vw;
+        justify-content: flex-end;
+        height: 60vh;
+        max-width: 900px;
+        margin:0 auto 0 auto;
+        position: relative;
+        min-height: 450px;
+        /* background-color: red; */
+       
+    }
+    
+}
+
+@media screen and (min-width:500px)  {
+    .hero2-text-box{
+        margin-left: 3rem;
+    }
+
+    .hero2-text-box h2{
+        font-size: 1.8rem;
+    }
+
+    .hero2-text-box h1{
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (min-width:650px) {
+    .herobanner2-container img{
+        max-height: 400px;
+       
+        transform: translateX(-40%);
+    }
+
+    .hero2-text-box h1{
+        font-size: 2.5rem;
+    }
+
+    .hero2-text-box p{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:675px) {
+    .herobanner2-container img{
+        max-height: 430px;
+        
+    }
+}
