@@ -33,7 +33,7 @@ const FullScreenSlide = ({ video, image, id,text }) => {
   const [isElementInView, setIsElementInView] = useState(false)
 
   const poster = text.name === "The Quantum Card Game" ? 
-   '../../media/card-game-screenshot.png' : '../../media/q3-screenshot.png'
+   '../../media/card-game-screenshot.png'
 
 
   useEffect(() => {
