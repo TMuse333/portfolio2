@@ -4,13 +4,42 @@ import './content.css'
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
+/*
+   This component is one of my primary ways to display text and an image.
+   All of the content that will be displayed by this component must be
+   passed in as a prop in the file you choose to display it in.
+   The props title, description, link, and linkText are the default
+   way to display text, but if you want to make a custom text formation,
+   you can create another text component and pass it in
+   to the customText prop to display it there.
+   Adding a tilt and animation feature to this component
+   are also possible by setting their respective props to true.
+   You can also reverse the display of the text and content
+   by setting reverse to true
+*/
+
+
+
 
 const Content = ({ title, image, description, rev, link, linkText, id, hasAnimation, hasTilt,
 customText,subTitle,imageId,bigImage }) => {
     const [isAnimated, setIsAnimated] = useState(false);
     const [tiltAngle, setTiltAngle] = useState(30);
     const contentRef = useRef();
+
+
+    /** This useEffect is used to calculate where the 
+     * element is relative to the viewport and determine
+     * how much the element should be tilted or when
+     * to trigger the animation .
+     * 
+     */
+
     useEffect(() => {
+
+
+
+
         const handleScroll = () => {
             const contentElement = contentRef.current;
             const elementTop = contentElement.getBoundingClientRect().top;
@@ -56,7 +85,7 @@ customText,subTitle,imageId,bigImage }) => {
     
     
     
-    
+    //animations for the content
     
 
     const animations = {
@@ -88,7 +117,11 @@ customText,subTitle,imageId,bigImage }) => {
 
 
 
-  
+/*
+If custom text is false, then the default text style will be rendered,
+also the tilt and animation are only applied if their respective props
+are true.
+*/  
     
 
     return (
@@ -99,8 +132,8 @@ customText,subTitle,imageId,bigImage }) => {
             <div className=
             {`image-text-box 
             ${rev ? 'reverse' : 'image-text-box'}`}
-            >
-                {rev ? (
+         >
+            {rev ? (
                     <div className="description-box">
 
                     <div className="description-box">

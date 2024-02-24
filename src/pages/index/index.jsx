@@ -21,6 +21,7 @@ import cards from '../../media/full-screen-quantum-cards.mp4'
 import code2 from '../../media/code-snippet2.png'
 import code3 from '../../media/code-snippet3.png'
 import Booking from '../../components/booking/booking'
+import q2 from '../../media/quantum-card-2.mp4'
 
 
 
@@ -33,7 +34,7 @@ const Homepage = () => {
             <Herobanner2/>
 
             <FullScreenSlide
-            video={cards}
+            video={q2}
             id='full-video-1'
             text={project1}
             />

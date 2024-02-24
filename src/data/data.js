@@ -124,14 +124,14 @@ export const designAdvantages = [
 
       export const project1 =
       {
-        subtitle:'My first react js project',
+        subtitle:'My first full stack project',
         title:'The Quantum Card Game',
-        description:`My first ever project in react, a card game with art that I made where you can test your memory and reaction time.
-        This project taught me a lot of how to use hooks like useState, useEffect and context
-        to ensure the game functioned properly`,
-        link:'https://quantumcardgame.netlify.app',
-        github:'https://github.com/TMuse333/card-game',
-        poster:'../../media/card-game-screenshot.png'
+        description:`This is my first full stack card game which uses react js
+        and mongodb to keep track of the leaderboard. This project taught me 
+        a lot about context and state management in react`,
+        link:'https://quantumcardgame2.netlify.app',
+        github:'https://github.com/TMuse333/card-game-2',
+        poster:'../../media/card-game2.png'
         
        
       }
