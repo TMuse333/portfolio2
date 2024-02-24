@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './fullScreenSlide.css';
 import { Link } from 'react-router-dom';
-import cardPoster from  '../../media/card-game2.png'
+import cardPoster from  'src/media/card-game2.png'
 
 import q3Poster from '../../media/q3-screenshot.png'
 
