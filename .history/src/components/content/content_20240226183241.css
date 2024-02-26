@@ -1,0 +1,246 @@
+.content-container{
+    width:100vw;
+    position: relative;
+    /* background-color: var(--primary-color); */
+    padding-top: 3px;
+    /* background-color: #BE9F5B; */
+  
+    /* background: radial-gradient(circle at center, #0099cd, #3073a0); */
+  
+  /* margin-top: 4rem; */
+  
+  }
+  
+  #company{
+  transform: perspective(1000px) rotateX(20deg);
+  }
+
+  #react-logo{
+    transform: scale(0.75) ;
+  }
+  
+  
+  
+  #content1{
+  /* background:#BE9F5B; */
+  margin-top: 5rem;
+  /* background: radial-gradient(circle at center, rgba(0, 153, 205, 0.7), rgba(48, 115, 160, 0.7)); */
+  background-color: rgb(122, 122, 122);
+  background: radial-gradient(circle at center, rgba(0, 153, 205, 0.7), rgba(48, 115, 160, 0.7));
+  }
+  
+  #content2{
+    background: radial-gradient(circle at center, rgba(0, 153, 205, 0.7), rgba(48, 115, 160, 0.7));
+    padding-bottom: 3rem;
+    height: max-content;
+  z-index: 2;
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  .image-text-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  
+  .reverse{
+    flex-direction: column-reverse;
+  }
+  
+  
+  
+  
+  .description-text{
+    font-family: 'Palatino Sans', 'Palatino Sans Informal', 'Palatino Sans Text', 'Palatino Sans W1G', 'Palatino Sans W01',sans-serif;
+    color:#ffffff19;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+    font-weight: 400;
+    font-size: 1rem;
+  
+  
+  }
+  
+  
+  
+  .content-image{
+    object-fit: cover;
+    width:90vw;
+    height:60vw;
+    max-width: 760px;
+    max-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
+  .description-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    white-space:pre-line;
+  
+  }
+  
+  .description-box button{
+    margin-top: 2rem;
+  }
+  
+  .image-box{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .image-box .title-text{
+    margin-left: 3rem;
+  }
+  
+  .button:hover {
+    background-color: #00bfff; /* Quantum blue color on hover */
+    color: #FFF; /* White text on hover */
+  } 
+  
+  @media screen and (min-width:655px){
+  
+  
+   .content-image-big{
+    width:100vw;
+   }
+  
+    .description-box{
+        text-align: left;
+        margin-left: 0.75rem;
+        margin-top: 1rem;
+    }
+  
+    .description-box .title-text{
+      margin-top: 0;
+      padding: 0;
+      /* margin-bottom: -1rem; */
+    }
+  
+    .description-text{
+      font-size: 1.2rem;
+     
+    }
+  
+    .description-box{
+  
+   white-space: normal;
+    }
+  
+    .title-text{
+      font-size: 2.5rem;
+      padding: 2rem 0 0 0;
+  
+    }
+  
+    .image-box{
+        width: 100vw;
+        margin-top: -1rem;
+  
+    }
+  
+    .content-image{
+     
+  
+    }
+  }
+  
+  
+  @media screen and (min-width:865px){
+    .image-text-box{
+        margin-left: auto;
+        margin-right: auto;
+               display: grid;
+               width:90vw;
+               max-width: 1200px;
+             
+             
+               /* background-color: #00bfff; */
+              
+               grid-template-columns: 1fr 1fr; 
+       gap:2rem;
+       margin-bottom: 2rem;
+       /* position: relative; */
+       
+  }
+  
+  .image-text-box-big{
+    margin-left: auto;
+    margin-right: auto;
+           display: grid;
+           width:90vw;
+           max-width: 1200px;
+         
+         
+           /* background-color: #00bfff; */
+          
+           grid-template-columns: 1fr 1fr; 
+   gap:2rem;
+   margin-bottom: 2rem;
+   /* position: relative; */
+   
+  }
+  
+      #about1{
+      margin-bottom:-2rem;
+    }
+  
+    .image-box{
+        width:auto;
+    }
+  
+  
+  
+  .content-image{
+    width:48vw;
+  
+    height:65vw;
+    max-height: 567px;
+    max-width: 668px;
+    margin-left: auto;
+  
+  
+  
+  }
+  
+  .content-image-big{
+    width:50vw;
+  }
+  
+  
+  
+  .description-box{
+    margin-top: -2rem;
+    display: flex;
+    margin-left: 0;
+   /* width:600px; */
+   padding-bottom: 3rem;
+  
+   width: 40vw;
+  
+    
+  }
+  
+  .description-box h2{
+   
+  }
+  
+  .description-box p{
+    /* height: 537px; */
+    /* width:350px; */
+    
+  white-space:pre-line;
+    max-width: 100%;
+  
+    line-height: 1.65rem;
+    margin-top: 1rem;
+  }
+  
+  }
