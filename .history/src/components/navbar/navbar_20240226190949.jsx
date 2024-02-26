@@ -38,8 +38,8 @@ const Navbar = () => {
   const navStyle = {
     height: !menuOpen ? '0' : '100px',
     overflowY: 'hidden',
-    transition: 'all 0.3s ease-in',
- padding: !menuOpen ? '0' : '1rem',
+    transition: 'height 0.3s ease-in',
+    backgroundColor: '#333',
     marginTop: '-0.5rem',
   };
 
@@ -66,9 +66,9 @@ const Navbar = () => {
         </div>
         {isMobile && (
           <ul style={navStyle} className='nav-list'>
-            <li onClick={() => scrollToSection('projects')}>Projects</li>
+            <li onClick={() => scrollToSection('full-video-1')}>Projects</li>
             <li onClick={() => scrollToSection('skills')}>Skills</li>
-            <li onClick={() => scrollToSection('big-1')}>Experience</li>
+            <li onClick={() => scrollToSection('big-content-1')}>Experience</li>
             <li onClick={() => scrollToSection('booking')}>Contact</li>
           </ul>
         )}

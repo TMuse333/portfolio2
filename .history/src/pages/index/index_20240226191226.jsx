@@ -39,7 +39,7 @@ const Homepage = () => {
             video={q2}
             id='full-video-1'
             text={project1}
-            navId='projects'
+            navId=''
             />
               <FullScreenSlide
             video={q3}

@@ -39,7 +39,6 @@ const Homepage = () => {
             video={q2}
             id='full-video-1'
             text={project1}
-            navId='projects'
             />
               <FullScreenSlide
             video={q3}
@@ -49,7 +48,7 @@ const Homepage = () => {
 
             <Content
             hasTilt={true}
-         id='skills'
+         id=''
             image={reactLogo}
             rev={true}
             imageId='react-logo'

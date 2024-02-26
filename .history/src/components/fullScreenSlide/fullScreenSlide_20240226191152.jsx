@@ -6,7 +6,7 @@ import cardPoster from  '../../media/card-game2.png'
 import q3Poster from '../../media/q3-screenshot.png'
 
 
-const FullScreenSlide = ({ video, image, id,text,navId }) => {
+const FullScreenSlide = ({ video, image, id,text, }) => {
   const videoRef = useRef();
   const textRef = useRef();
   const elementRef = useRef()
@@ -291,7 +291,7 @@ const FullScreenSlide = ({ video, image, id,text,navId }) => {
 
   return (
     <>
-    <div ref={elementRef} id={navId}
+    <div ref={elementRef} id='projects'
     className="full-slide-container">
       {!isDesktop && (
         <div

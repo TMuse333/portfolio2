@@ -62,7 +62,7 @@ const Booking = () => {
 
  
     <div className='booking-container'
-    id='booking'>
+    id>
       
 
 

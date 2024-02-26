@@ -291,7 +291,7 @@ const FullScreenSlide = ({ video, image, id,text,navId }) => {
 
   return (
     <>
-    <div ref={elementRef} id={navId}
+    <div ref={elementRef} id='projects'
     className="full-slide-container">
       {!isDesktop && (
         <div

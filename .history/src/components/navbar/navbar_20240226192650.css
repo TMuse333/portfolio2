@@ -60,7 +60,7 @@
     flex-direction: column;
     cursor: pointer;
     margin-top: 1rem;
-    margin-right: 2rem;
+    margin-right: 0.5rem;
     }
     .bar {
     width: 25px;
@@ -92,7 +92,7 @@
         list-style: none;
         /* width: 100px; */
         right:1%;
-        top:110%;
+        top:120%;
         padding: 1rem;
         background-color: rgba(48, 115, 160, 1);
     }

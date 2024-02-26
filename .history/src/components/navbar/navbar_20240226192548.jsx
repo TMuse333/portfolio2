@@ -38,7 +38,7 @@ const Navbar = () => {
   const navStyle = {
     height: !menuOpen ? '0' : '100px',
     overflowY: 'hidden',
-    transition: 'all 0.3s ease-in',
+    transition: 'height 0.3s ease-in',
  padding: !menuOpen ? '0' : '1rem',
     marginTop: '-0.5rem',
   };

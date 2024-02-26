@@ -1,21 +1,21 @@
 .navbar-container{
-    position: absolute;
+    position: fixed;
     width: 100vw;
     top:0;
     left:50%;
     transform: translateX(-50%);
     height:60px;
-    z-index: 6000;
-    background-color: rgba(48, 115, 160, 1);
+    z-index: 6000000;
+    background-color: transparent;
 
     }
     
     
     .nav-wrapper{
-        background-color: rgba(48, 115, 160, 1);
+    background-color: transparent;
     width: 100vw;
     height: 60px;
-    position: absolute;
+    position: fixed;
     top:0;
     left:0%;
     z-index: 100;
@@ -60,7 +60,7 @@
     flex-direction: column;
     cursor: pointer;
     margin-top: 1rem;
-    margin-right: 2rem;
+    margin-right: 0.5rem;
     }
     .bar {
     width: 25px;
@@ -90,9 +90,9 @@
     .nav-list{
         position: absolute;
         list-style: none;
-        /* width: 100px; */
-        right:1%;
-        top:110%;
+        width: 100px;
+        right:0%;
+        top:130%;
         padding: 1rem;
         background-color: rgba(48, 115, 160, 1);
     }
