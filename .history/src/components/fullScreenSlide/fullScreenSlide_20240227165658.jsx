@@ -333,7 +333,26 @@ const FullScreenSlide = ({ video, image, id,text,navId }) => {
         </div>
       )}
   
-     
+      {/* <div className='full-slide-description'>
+        <h2 style={{
+            color:'black'
+        }}>
+          {text.title}
+        </h2>
+        <p>
+        {text.description}
+          <br/>
+          <Link to={text.link}>
+          <button>View Project</button>
+          </Link>
+        
+          &nbsp;
+          <Link to={text.github}>
+          <button>View github</button>
+          </Link>
+         
+        </p>
+      </div> */}
     </div>
   </>
   

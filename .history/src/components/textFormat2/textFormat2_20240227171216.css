@@ -44,12 +44,12 @@
 }
 
 
-@media screen and (min-width:900px){
+@media screen and (min-width:655px){
     .text2-container h2{
-        font-size: 2.6rem;
+        font-size: 2.2rem;
     }
 
     .text2-container p{
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 }

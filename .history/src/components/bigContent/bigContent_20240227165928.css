@@ -72,7 +72,7 @@
     }
 
     .reverse-text{
-       
+        /* margin-right: 2rem; */
         position: relative;
         max-width: 400px;
         width: 15rem;
@@ -88,14 +88,19 @@
     max-width: 400px;
     position: relative;
 
-
+    /* left:15%; */
+    /* position: absolute;
+    left:20%; */
 
  
     }
 
     .reverse-container{
         flex-direction: row-reverse;
- 
+     /* width: 100vw; */
+        /* margin-right: auto;
+        margin-left: 0; */
+        /* max-width: 1500px; */
       
     }
 
@@ -103,9 +108,15 @@
 
         display: flex;
         justify-content: space-evenly;
-     
+        /* width:80vw; */
+        /* max-width:870px; */
         margin-left: -3rem;
-
+        /* flex-direction: row-reverse; */
+  
+   /* margin-left: auto; */
+        /* max-width: 1400px; */
+        /* max-width: 900px; */
+        /* margin: 0 auto 0 0; */
         
     }
     
@@ -116,9 +127,4 @@
         width: 38vw;
         margin-left: -5rem;
     }
-}
-
-
-@media screen and (min-width:865px){
-    
 }

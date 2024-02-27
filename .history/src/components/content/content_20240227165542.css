@@ -249,8 +249,4 @@
   
   }
 
-  @media screen and (min-width:900px){
-    .description-box p{
-      font-size: 1.3rem;
-    }
-  }
+  @media screen and 

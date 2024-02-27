@@ -239,7 +239,7 @@
   .description-box p{
     /* height: 537px; */
     /* width:350px; */
-
+    font-size: 1.2rem;
   white-space:pre-line;
     max-width: 100%;
   
@@ -247,10 +247,4 @@
     margin-top: 1rem;
   }
   
-  }
-
-  @media screen and (min-width:900px){
-    .description-box p{
-      font-size: 1.3rem;
-    }
   }
