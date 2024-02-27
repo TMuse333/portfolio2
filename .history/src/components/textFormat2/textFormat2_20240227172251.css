@@ -54,7 +54,7 @@
 @media screen and (min-width:900px){
 
     .text2-container{
-        margin-left: -4rem;
+        marign
     }
 
     .text2-container h2{
@@ -63,7 +63,6 @@
 
     .text2-list li{
         font-size: 1.3rem;
-        /* width: max-content; */
-        width:40vw;
+        width: max-content;
     }
 }

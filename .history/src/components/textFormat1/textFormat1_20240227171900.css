@@ -27,10 +27,6 @@
         /* margin-top: 3rem; */
     }
 
-
-}
-
-@media screen and (min-width:865px) {
     .text1-container p{
         font-size: 1.3rem;
     }
@@ -38,4 +34,8 @@
     .text1-container h2{
         font-size: 1.75rem;
     }
+}
+
+@media screen {
+    
 }
