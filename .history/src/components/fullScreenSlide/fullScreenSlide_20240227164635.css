@@ -128,7 +128,7 @@ justify-content: center;
 
 @media screen and (min-width:700px){
     .full-slide-description h2{
-     font-size: 1.6rem;
+     fi
         /* width: 10vw; */
     }
 
@@ -138,7 +138,7 @@ justify-content: center;
         /* margin:0;
         font-size: 2.5rem;
         padding: 0; */
-        font-size: 3.5rem;
+        font-size: 2.9rem;
     }
 
     .full-slide-description{
