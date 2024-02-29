@@ -129,8 +129,7 @@ const Homepage = () => {
             hasAnimation={true}
            customText={<HydroList
            text={designAdvantages2}
-           intro={hydrolistIntro2}
-           absolute={true}/>
+           intro={hydrolistIntro2}/>
            }/>
 
            <h1>Other Experiences</h1>

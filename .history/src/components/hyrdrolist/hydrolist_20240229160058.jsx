@@ -89,7 +89,7 @@ const HydroList = ({text,intro,absolute}) => {
              style={{
                     
                       
-              marginTop:absolute ? '5rem' : '0'
+              marginTop:absolute ? '10rem' : '0'
             }}
 >
 

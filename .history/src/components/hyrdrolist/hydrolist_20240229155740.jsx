@@ -86,11 +86,6 @@ const HydroList = ({text,intro,absolute}) => {
     return (
         <>
         <div className="hydro-wrapper"
-             style={{
-                    
-                      
-              marginTop:absolute ? '5rem' : '0'
-            }}
 >
 
 <h2 style={{
@@ -106,7 +101,9 @@ const HydroList = ({text,intro,absolute}) => {
         <div className="hydrolist-container">
 
             <div className="hydro-list"
-               >
+                    style={{
+                      position:absolute ? 'absolute' : 'auto'
+                    }}>
                {text.map((text,index) => (
                 <div className="hydro-element"
                 key={index}

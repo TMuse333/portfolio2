@@ -86,11 +86,7 @@ const HydroList = ({text,intro,absolute}) => {
     return (
         <>
         <div className="hydro-wrapper"
-             style={{
-                    
-                      
-              marginTop:absolute ? '5rem' : '0'
-            }}
+        
 >
 
 <h2 style={{
