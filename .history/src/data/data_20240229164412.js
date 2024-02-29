@@ -229,8 +229,7 @@ export const designAdvantages = [
         },
         {
           name:'Responsive Design',
-          description:'Most of the components have two distinct versions, one where the image and text are stacked on each other for mobile devices, and one where I use display flex with flex direction: row to ensure the components look'+
-          ' well spaced out on all screens. There is also a max width property on the desktop versions to ensure the content does not get too stretched out.'
+          description:'Most of the components have two distinct versions, one where the image and text are stacked on each other for mobile devices, and one where I use displa'
         }
       ]
     
