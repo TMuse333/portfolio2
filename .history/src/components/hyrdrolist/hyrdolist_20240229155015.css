@@ -114,8 +114,8 @@
 
 @media screen and (min-width:865px){
     .hydro-list{
-        /* position: absolute;
-        top:0; */
+        position: absolute;
+        top:0;
         /* left:50%;
         transform: translateX(-50%); */
      
@@ -123,8 +123,7 @@
 
 .hydro-wrapper{
     /* margin-top: -15rem; */
-    /* margin-bottom: 10rem; */
-    height:max-content;
+    margin
 
 }
 
