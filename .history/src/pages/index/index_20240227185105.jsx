@@ -78,29 +78,8 @@ const Homepage = () => {
             />
 
             <HydroList
-           text={q3Tactics}
-           intro={q3Intro}/>
-
-<div style={{
-    marginTop:'2rem'
-}}>
-
-
-        <Link to='https://github.com/TMuse333/quantumDesigns'>
-
-     
-           <button>
-            Github
-           </button>
-           </Link>
-           <Link to='https://q3designs.netlify.app'>
-
-           <button>
-           View website
-           </button>
-                       
-           </Link>
-           </div>
+           text={cardGameDesc}
+           intro={q3Tactics}/>
 
 
 

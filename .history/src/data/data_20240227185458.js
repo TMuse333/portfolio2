@@ -226,7 +226,7 @@ export const designAdvantages = [
         },
         {
           name:'Email js implementation',
-          description:'This project taught me how to send emails through a react js project with email.js.'
+          description:'This website can send emails with the power of email js, which had to b'
         }
       ]
     

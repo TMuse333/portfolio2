@@ -96,7 +96,7 @@ const Homepage = () => {
            <Link to='https://q3designs.netlify.app'>
 
            <button>
-           View website
+            Play The Game
            </button>
                        
            </Link>

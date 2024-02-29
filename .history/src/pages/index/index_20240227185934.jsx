@@ -86,17 +86,17 @@ const Homepage = () => {
 }}>
 
 
-        <Link to='https://github.com/TMuse333/quantumDesigns'>
+        <Link to='https://github.com/TMuse333/card-game-2'>
 
      
            <button>
             Github
            </button>
            </Link>
-           <Link to='https://q3designs.netlify.app'>
+           <Link to='https://quantumcardgame2.netlify.app'>
 
            <button>
-           View website
+            Play The Game
            </button>
                        
            </Link>

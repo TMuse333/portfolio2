@@ -9,9 +9,8 @@ import {designAdvantages,
 project1,
 project2,
 hydrolistIntro1,
-hydrolistIntro2,cardGameIntro,
-q3Tactics
-,cardGameDesc,q3Intro} from '../../data/data'
+hydrolistIntro2,cardGameIntro
+,cardGameDesc} from '../../data/data'
 import Content from '../../components/content/content'
 import HydroList from '../../components/hyrdrolist/hydrolist'
 import BigContent from '../../components/bigContent/bigContent'
@@ -76,33 +75,6 @@ const Homepage = () => {
             id='full-video-2'
             text={project2}
             />
-
-            <HydroList
-           text={q3Tactics}
-           intro={q3Intro}/>
-
-<div style={{
-    marginTop:'2rem'
-}}>
-
-
-        <Link to='https://github.com/TMuse333/quantumDesigns'>
-
-     
-           <button>
-            Github
-           </button>
-           </Link>
-           <Link to='https://q3designs.netlify.app'>
-
-           <button>
-           View website
-           </button>
-                       
-           </Link>
-           </div>
-
-
 
             <Content
             hasTilt={true}

@@ -209,26 +209,6 @@ export const designAdvantages = [
         'digital marketing company. This project was mainly focused on creating designs that standout from the rest. '+
         'Some tactics I used to stand out were:'
       }
-
-      export const q3Tactics = [
-        {
-          name:'Particles js and three js',
-          description:'I implemented and customized particles js to fit the them of the website with a outer space like theme along with a sphere I made in three js'
-        },
-        {
-          name:'Carousel with description',
-          description:'I used a react carousel and added a description for each image that fades in and out '+
-          'with the help of framer motion'
-        },
-        {
-          name:'tilting feature',
-          description:'To enhance interactivity on the website, I implemented a tiliting feature on some of the components so that they stay on the website longer '
-        },
-        {
-          name:'Email js implementation',
-          description:'This project taught me how to send emails through a react js project with email.js.'
-        }
-      ]
     
   
 

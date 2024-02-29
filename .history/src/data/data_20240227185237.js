@@ -221,12 +221,8 @@ export const designAdvantages = [
           'with the help of framer motion'
         },
         {
-          name:'tilting feature',
-          description:'To enhance interactivity on the website, I implemented a tiliting feature on some of the components so that they stay on the website longer '
-        },
-        {
-          name:'Email js implementation',
-          description:'This project taught me how to send emails through a react js project with email.js.'
+          name:'tilting feature and slide in animations',
+          ''
         }
       ]
     

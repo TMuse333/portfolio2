@@ -122,11 +122,7 @@ export const designAdvantages = [
       ]
 
       export const cardGameIntro = {
-        title:'The Quantum Card Game',
-        description:'This was my first full stack project where I used React js for the frontend and mongodb for the backend. '+
-        'The objective of the game is to memorize the backside of each card and match it with the image at the top of the screen, '+
-        'which changes every turn. This project was great for learning how to manage a lot of states and using mongodb.'+
-        ' Here are some of the big concepts I learned while making this project.'
+        title:'The Quantum Card Game'
       }
 
 
@@ -202,33 +198,6 @@ export const designAdvantages = [
         ' are some other skills and personal qualities I have'
       }
   
-
-      export const q3Intro = {
-        name:'Q3 Designs Freelancing',
-        description:'This is where I offer my react js services to clients, where I have made a website for a '+
-        'digital marketing company. This project was mainly focused on creating designs that standout from the rest. '+
-        'Some tactics I used to stand out were:'
-      }
-
-      export const q3Tactics = [
-        {
-          name:'Particles js and three js',
-          description:'I implemented and customized particles js to fit the them of the website with a outer space like theme along with a sphere I made in three js'
-        },
-        {
-          name:'Carousel with description',
-          description:'I used a react carousel and added a description for each image that fades in and out '+
-          'with the help of framer motion'
-        },
-        {
-          name:'tilting feature',
-          description:'To enhance interactivity on the website, I implemented a tiliting feature on some of the components so that they stay on the website longer '
-        },
-        {
-          name:'Email js implementation',
-          description:'This project taught me how to send emails through a react js project with email.js.'
-        }
-      ]
     
   
 
