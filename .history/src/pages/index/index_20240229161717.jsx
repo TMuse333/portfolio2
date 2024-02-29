@@ -44,7 +44,7 @@ const Homepage = () => {
                     Projects
                 </h1>
                 <p>
-                    I take a very learn by doing approach and have made numerous projects
+                    I take a very learn by doing approcah and have made numerous projects
                     to learn how to code, here are some of my best projects
                 </p>
 

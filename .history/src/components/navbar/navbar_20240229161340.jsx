@@ -48,7 +48,7 @@ const Navbar = () => {
       <nav className='navbar-container'>
         <div className='navbar-contents'>
           <div className='desktop-menu'>
-            <p onClick={() => scrollToSection('projects')}>Projects</p>
+            <p onClick={() => scrollToSection('full-video-1')}>Projects</p>
             <p onClick={() => scrollToSection('skills')}>Skills</p>
             <p onClick={() => scrollToSection('big-1')}>Experience</p>
             <p onClick={() => scrollToSection('booking')}>Contact</p>

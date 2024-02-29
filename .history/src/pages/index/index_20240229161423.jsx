@@ -38,15 +38,7 @@ const Homepage = () => {
 
             <Herobanner2/>
 
-            <div id='projects'>
-
-                <h1>
-                    Projects
-                </h1>
-                <p>
-                    I take a very learn by doing approach and have made numerous projects
-                    to learn how to code, here are some of my best projects
-                </p>
+            <div id=''>
 
             
 
