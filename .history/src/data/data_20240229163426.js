@@ -189,7 +189,7 @@ export const designAdvantages = [
 
      export const hydrolistIntro1 = {
         title:'My Primary Skill',
-        description:`Currently my I am most competent in react JS, with over 550 hours since July 2023 (Approximately 4 hours of coding a day everyday). Here are some of my skills within react,
+        description:`Currently my I am most competent in react JS,with over 550 hours since July 2023 (Approximately 4 hours of coding a day everyday). Here are some of my skills within react,
         which include html and css knowledge as well`,
         github:'https://github.com/TMuse333/card-game',
         link:'https://quantumcardgame.netlify.app'

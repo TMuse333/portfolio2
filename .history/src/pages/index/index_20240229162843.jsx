@@ -44,10 +44,7 @@ const Homepage = () => {
                     Projects
                 </h1>
                 <p style={{
-                    fontSize:'1.3rem',
-                    margin:'0 auto',
-                    maxWidth:'900px',
-                    width:'80vw'
+                    fontSize:'1.3rem'
                 }}>
                     I take a very learn by doing approach and have made numerous projects
                     to learn how to code, here are some of my best projects

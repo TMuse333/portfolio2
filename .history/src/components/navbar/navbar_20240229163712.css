@@ -12,7 +12,7 @@
     
     
     .nav-wrapper{
-        /* background-color: rgba(48, 115, 160, 1); */
+        background-color: rgba(48, 115, 160, 1);
     width: 100vw;
     height: 60px;
     position: fixed;
@@ -127,7 +127,6 @@
     
     .desktop-menu p{
     margin-left: 0.75rem;
-    font-size: 1.2rem;
     }
     
     

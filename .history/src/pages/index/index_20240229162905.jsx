@@ -46,8 +46,7 @@ const Homepage = () => {
                 <p style={{
                     fontSize:'1.3rem',
                     margin:'0 auto',
-                    maxWidth:'900px',
-                    width:'80vw'
+                    maxWidth:'900px'
                 }}>
                     I take a very learn by doing approach and have made numerous projects
                     to learn how to code, here are some of my best projects
