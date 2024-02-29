@@ -73,11 +73,8 @@ const Homepage = () => {
                        
            </Link>
            </div>
-           </div>
 
-            <div>
 
-         
               <FullScreenSlide
             video={q3}
             id='full-video-2'
@@ -107,7 +104,6 @@ const Homepage = () => {
            </button>
                        
            </Link>
-           </div>
            </div>
 
 

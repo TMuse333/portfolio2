@@ -39,8 +39,8 @@ const Homepage = () => {
             <Herobanner2/>
 
             <div>
-
-            
+                
+            </div>
 
             <FullScreenSlide
             video={q2}
@@ -73,11 +73,8 @@ const Homepage = () => {
                        
            </Link>
            </div>
-           </div>
 
-            <div>
 
-         
               <FullScreenSlide
             video={q3}
             id='full-video-2'
@@ -107,7 +104,6 @@ const Homepage = () => {
            </button>
                        
            </Link>
-           </div>
            </div>
 
 
