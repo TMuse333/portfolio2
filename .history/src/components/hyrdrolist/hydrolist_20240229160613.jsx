@@ -100,7 +100,7 @@ const HydroList = ({text,intro,absolute}) => {
 
               <p className="docs-intro"
               style={{
-                fontSize: absolute? '1.4rem' : 'auto'
+                fontSize
               }}>
             {intro.description}
 
