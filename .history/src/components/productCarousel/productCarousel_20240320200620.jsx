@@ -20,7 +20,7 @@ const ProductCarousel = () => {
   const [carouselSwiped, setCarouselSwiped] = useState(false)
 
   const [positions, setPositions] = useState(
-    Array.from({ length: 6 }, (_, index) => ({
+    Array.from({ length: 4 }, (_, index) => ({
       left: `${index * 50}%`,
       transform: `translateX(-50%)`,
       transition: 'transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease',
