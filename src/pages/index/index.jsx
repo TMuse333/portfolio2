@@ -27,6 +27,7 @@ import q2 from '../../media/quantum-card-2.mp4'
 import reactLogo from '../../media/react.png'
 import q3logo from '../../media/q3-visuals-logo.png'
 import { Link } from 'react-router-dom'
+import ProductCarousel from '../../components/productCarousel/productCarousel'
 
 
 
@@ -160,6 +161,20 @@ const Homepage = () => {
            reverse={true}
            customText={<TextFormat2/>}
            />
+
+
+           <h1 style={{
+            marginTop:'3rem'
+           }}>
+            Artist at Heart
+           </h1>
+           <p className='artist-p'>
+            Besides designing websites, I have years of drawing experiences
+            which have greatly helped me designing websites.
+            Here are some of my drawings.
+           </p>
+
+           <ProductCarousel/>
 
            <Booking/>
 

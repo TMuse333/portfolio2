@@ -10,13 +10,14 @@ justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
+    padding-bottom: 2rem;
 
    
     
 }
 
 .booking-contents{
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
     /* height:100vh */
 }
 
