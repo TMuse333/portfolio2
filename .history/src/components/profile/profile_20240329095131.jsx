@@ -88,7 +88,14 @@ const Profile = ({id}) => {
         };
     }, [profileRef, setTiltAngle]);
     
-
+    
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+    
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [handleScroll]);
     
 
 

@@ -77,8 +77,7 @@ const Profile = ({id}) => {
     
             setTiltAngle(newTiltAngle);
     
-            const offset = 350;
-         
+           
         };
     
         window.addEventListener("scroll", handleScroll);
@@ -88,7 +87,14 @@ const Profile = ({id}) => {
         };
     }, [profileRef, setTiltAngle]);
     
-
+    
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+    
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [handleScroll]);
     
 
 
