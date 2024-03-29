@@ -266,7 +266,7 @@ const ProductCarousel = () => {
   id={product.id}
   onMouseEnter={()=>{handleMouseEnter(index)}}
   onMouseLeave={handleMouseLeave}
-  // onClick={()=>handleImageClick(index)}
+  onClick={()=>handleImageClick(index)}
  
 />
               <button

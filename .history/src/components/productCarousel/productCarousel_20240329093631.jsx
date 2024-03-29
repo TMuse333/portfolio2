@@ -194,8 +194,7 @@ const ProductCarousel = () => {
 
   const handleImageClick = (index) => {
     // Calculate the number of positions to shift the carousel
-    let positionsToShift = Math.floor(products.length / 2) - index;
-    if (positionsToShift < 0) positionsToShift += products.length; // Adjust for negative positions
+    const positionsToShift = (products.length / 2) - index;
   
     // Shift the carousel positions circularly to center the clicked image
     const shiftedPositions = positions.map((position, i) => {
@@ -207,7 +206,6 @@ const ProductCarousel = () => {
     setCurrentPosition((prevPosition) => (prevPosition + positionsToShift) % positions.length);
     setPositions(shiftedPositions);
   };
-  
 
 
 
@@ -266,7 +264,7 @@ const ProductCarousel = () => {
   id={product.id}
   onMouseEnter={()=>{handleMouseEnter(index)}}
   onMouseLeave={handleMouseLeave}
-  // onClick={()=>handleImageClick(index)}
+  onClick={()=>handleImageClick(index)}
  
 />
               <button

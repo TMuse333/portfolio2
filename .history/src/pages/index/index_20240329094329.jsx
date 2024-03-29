@@ -164,7 +164,7 @@ const Homepage = () => {
            />
 
 
-           <h1 className='artist-h1'>
+           <h1 className='artist'>
             Artist at Heart
            </h1>
            <p className='artist-p'>
