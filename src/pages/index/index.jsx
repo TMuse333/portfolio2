@@ -28,6 +28,7 @@ import reactLogo from '../../media/react.png'
 import q3logo from '../../media/q3-visuals-logo.png'
 import { Link } from 'react-router-dom'
 import ProductCarousel from '../../components/productCarousel/productCarousel'
+import Profile from '../../components/profile/profile'
 
 
 
@@ -164,7 +165,7 @@ const Homepage = () => {
 
 
            <h1 style={{
-            marginTop:'3rem'
+            marginTop:'8rem'
            }}>
             Artist at Heart
            </h1>
@@ -175,6 +176,8 @@ const Homepage = () => {
            </p>
 
            <ProductCarousel/>
+
+           <Profile/>
 
            <Booking/>
 

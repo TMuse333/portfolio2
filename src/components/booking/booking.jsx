@@ -96,7 +96,7 @@ const Booking = () => {
        <></>
       ) : (
         <>
-          <p className='booking-p'>
+          {/* <p className='booking-p'>
             Let's get in contact so we can work together
           </p>
           <p className='booking-p'>
@@ -104,7 +104,7 @@ const Booking = () => {
           </p>
           <p className='booking-p'>
             Text me at 902-999-1006
-          </p>
+          </p> */}
           <form onSubmit={sendEmail} ref={form}>
             <div className='info-box-container'>
               <input type='email' placeholder='Email' name='user_email' />
