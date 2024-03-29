@@ -83,19 +83,19 @@ const ProductCarousel = () => {
   const products = [
     {
       image: striker,
-      name: 'The Quantum Striker',
+      name: 'the striker',
       description: 'the quantum realm is strong',
       id:'striker'
     },
     {
       image: abu5,
-      name: 'Aboubacar ',
+      name: 'Abu fire',
       description: 'Aboubacar flexing with the fire',
       id:'abu5'
     },
     {
       image: abu6,
-      name: 'Aboubacar 2',
+      name: 'Abu flex',
       description: 'Flexing at glenbourne',
       id:'abu6'
     },
@@ -152,8 +152,6 @@ const ProductCarousel = () => {
         );
   };
 
-  const [hovered, setHovered] = useState(null)
-
   const handlePrevClick = () => {
     setCurrentPosition((prevPosition) =>
       prevPosition === 0 ? positions.length - 1 : prevPosition - 1
@@ -170,20 +168,16 @@ const ProductCarousel = () => {
     setCarouselSwiped(true)
   };
 
-
-
   const productStyles = products.map((product, index) => {
     const isCentered =
       positions[(currentPosition + index) % positions.length].left === '50%';
-
-      const isHovered = !isCentered && index === hovered
 
     return {
       left: positions[(currentPosition + index) % positions.length].left,
       transform: `${
         positions[(currentPosition + index) % positions.length].transform
-      } ${isCentered || isHovered? 'scale(1.05)' : 'scale(1)'}`,
-      filter: isCentered ? 'none' : isHovered ? 'brightness(0.65)' : 'brightness(55%)',
+      } ${isCentered ? 'scale(1.2)' : 'scale(1)'}`,
+      filter: isCentered ? 'none' : 'brightness(55%)',
       transition: `left 0.5s ease, transform 0.5s ease, ${
        !carouselSwiped && isCentered ? 'opacity 2.5s ease 1.75s' : 'opacity 0.1s ease 0.1s' // Apply a 0.5s delay to opacity when centered
       }`,
@@ -191,16 +185,6 @@ const ProductCarousel = () => {
       display: isCentered && inView ? 'block' : 'none'
     };
   });
-
-
-
-  const handleMouseEnter = (index) => {
-    setHovered(index)
-  }
-
-  const handleMouseLeave = () => {
-    setHovered(null)
-  }
 
   return (
     <div className="product-carousel-container" ref={ref}>
@@ -222,7 +206,6 @@ const ProductCarousel = () => {
              
             }}
           >
-            
             <motion.div className="image-button-container"
              
 >
@@ -233,7 +216,7 @@ const ProductCarousel = () => {
 
                   opacity: productStyles[index].opacity,
                   transition:productStyles[index].transition,
-                  display:productStyles[index].display
+                  display:productStyles[index]
                 }}
               >
                 <FiChevronLeft />
@@ -247,8 +230,6 @@ const ProductCarousel = () => {
   alt={`Product ${index + 1}`}
   key={index}
   id={product.id}
-  onMouseEnter={()=>{handleMouseEnter(index)}}
-  onMouseLeave={handleMouseLeave}
  
 />
               <button
@@ -258,8 +239,7 @@ const ProductCarousel = () => {
                 onClick={handlePrevClick}
                 style={{
                   opacity: productStyles[index].opacity,
-                  transition:productStyles[index].transition,
-                  display:productStyles[index].display
+                  transition:productStyles[index].transition
                 }}
               >
                 <FiChevronRight />
@@ -275,12 +255,10 @@ const ProductCarousel = () => {
                 transition: 'opacity 0.5s ease 0.5s',
               }}
             ></div>
-                 <h2 className='product-title'
-            style={{
+            <p style={{
               opacity:productStyles[index].opacity
             }}
-            >{product.name}</h2>
-       
+            >{product.name}</p>
           </motion.div>
         ))}
       </div>

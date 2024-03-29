@@ -101,9 +101,5 @@ opacity: 1;
     'Palatino Sans', 'Palatino Sans Informal', 'Palatino Sans Text', 'Palatino Sans W1G', 'Palatino Sans W01',sans-serif;
 }
 
-@media screen and (min-width:655px){
-    .margin-bottom{
-        margin-bottom: -3rem;
-    }
-}
+@media screen and (min-wdith:655px)
 

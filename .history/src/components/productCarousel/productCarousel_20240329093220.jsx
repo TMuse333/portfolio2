@@ -183,7 +183,7 @@ const ProductCarousel = () => {
       transform: `${
         positions[(currentPosition + index) % positions.length].transform
       } ${isCentered || isHovered? 'scale(1.05)' : 'scale(1)'}`,
-      filter: isCentered ? 'none' : isHovered ? 'brightness(0.65)' : 'brightness(55%)',
+      filter: isCentered ? 'none' : 'brightness(55%)',
       transition: `left 0.5s ease, transform 0.5s ease, ${
        !carouselSwiped && isCentered ? 'opacity 2.5s ease 1.75s' : 'opacity 0.1s ease 0.1s' // Apply a 0.5s delay to opacity when centered
       }`,

@@ -2,8 +2,8 @@
     width:38vw;
     object-fit: cover;
     height:60vw;
-    max-height:493px ;
-    max-width: 312px;
+    max-height:600px ;
+    max-width: 420px;
     overflow-y: hidden;
    
    
@@ -87,9 +87,7 @@
         font-size: 3rem;
     }
 
-    .product-title{
-        font-size: 2rem;
-    }
+    .pro
 }
 
 @media screen and (min-width:865px){

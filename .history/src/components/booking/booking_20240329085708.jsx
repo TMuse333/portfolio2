@@ -83,9 +83,10 @@ const Booking = () => {
 
         
 
-        <h1 className='margin-bottom'
-    
-        >
+        <h1
+        style={{
+            marginBottom:'-3rem'
+        }}>
             Contact Me
         </h1>
       <h1 className='title-text booking-title'>
