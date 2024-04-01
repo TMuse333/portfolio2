@@ -1,5 +1,5 @@
 import React from "react";
-import fullBody from '../../media/smiley-tom-half.png'
+import fullBody from '../../media/smiley-tom-half-min.webp'
 import './herobanner2.css'
 const Herobanner2 = () => {
 

@@ -6,7 +6,6 @@ import './profile.css'
 import insta from '../../media/instagram-logo.svg.png'
 import linked from '../../media/linkedin.png'
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 const Profile = ({id}) => {
     const [inView, setInView] = useState(false);
@@ -107,12 +106,10 @@ useEffect(()=> {
 
     const socials = [
         {
-            image: insta,
-            url:'https://www.instagram.com/thomas__musial/'
+            image: insta
         },
         {
-            image: linked,
-            url:'https://www.linkedin.com/in/thomas-musial-0077332b5/'
+            image: linked
         },
         // {
         //     image: x
@@ -234,11 +231,7 @@ useEffect(()=> {
 >Thomaslmusial@gmail.com</motion.p>
             <div className="profile-socials">
                 {socials.map((social, index) => (
-                    <Link to={social.url}>
-
-                   
                     <img src={social.image} key={index} />
-                    </Link>
                 ))}
             </div>
             </div>
@@ -301,14 +294,10 @@ useEffect(()=> {
                <div className="profile-socials">
                 
                 {socials.map((social, index) => (
-                    <Link to={social.url}>
-
-                    
                     <motion.img
                     initial={socialVariants((index * 0.5)).initial}
                     animate={tiltFinished ?socialVariants((index * 0.25)).animate : null }
                      src={social.image} key={index} />
-                     </Link>
                 ))}
             </div>
             </div>

@@ -112,7 +112,7 @@ useEffect(()=> {
         },
         {
             image: linked,
-            url:'https://www.linkedin.com/in/thomas-musial-0077332b5/'
+            url:'www.linkedin.com/in/thomas-musial-0077332b5'
         },
         // {
         //     image: x
@@ -238,7 +238,6 @@ useEffect(()=> {
 
                    
                     <img src={social.image} key={index} />
-                    </Link>
                 ))}
             </div>
             </div>
@@ -301,14 +300,10 @@ useEffect(()=> {
                <div className="profile-socials">
                 
                 {socials.map((social, index) => (
-                    <Link to={social.url}>
-
-                    
                     <motion.img
                     initial={socialVariants((index * 0.5)).initial}
                     animate={tiltFinished ?socialVariants((index * 0.25)).animate : null }
                      src={social.image} key={index} />
-                     </Link>
                 ))}
             </div>
             </div>

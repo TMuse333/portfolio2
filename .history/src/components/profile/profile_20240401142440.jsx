@@ -112,7 +112,7 @@ useEffect(()=> {
         },
         {
             image: linked,
-            url:'https://www.linkedin.com/in/thomas-musial-0077332b5/'
+            url:'www.linkedin.com/in/thomas-musial-0077332b5'
         },
         // {
         //     image: x

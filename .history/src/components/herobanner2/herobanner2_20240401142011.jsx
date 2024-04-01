@@ -1,5 +1,5 @@
 import React from "react";
-import fullBody from '../../media/smiley-tom-half.png'
+import fullBody from '../../media/smiley-tom-half-min.webp'
 import './herobanner2.css'
 const Herobanner2 = () => {
 
@@ -10,7 +10,7 @@ const Herobanner2 = () => {
 
             <div className="hero2-content-box">
                 <div className="hero2-text-box">
-                 <h2>Hello, I'm Thomas</h2>
+                 <h2>Hello, I'm Thomas.</h2>
                  <h1 >A Front end Developer</h1>
                  <p>
                  I take a disciplined and focused approach to creating unique,
